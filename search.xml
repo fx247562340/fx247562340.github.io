@@ -216,6 +216,33 @@
     
     
     <entry>
+      <title>内存时序和超频</title>
+      <link href="/posts/3086756412.html"/>
+      <url>/posts/3086756412.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="内存时序参数与超频深入解析"><a href="#内存时序参数与超频深入解析" class="headerlink" title="内存时序参数与超频深入解析"></a>内存时序参数与超频深入解析</h1><h2 id="内存时序参数简介"><a href="#内存时序参数简介" class="headerlink" title="内存时序参数简介"></a>内存时序参数简介</h2><p>内存模块具有丰富的时序参数可以配置,主要参数如下:</p><h3 id="CAS-Latency-CL"><a href="#CAS-Latency-CL" class="headerlink" title="CAS Latency(CL)"></a>CAS Latency(CL)</h3><p><code>描述行缓冲存储器(ROW BUFFER)读取列地址的数据延迟时间(CAS COMMAND DELAY)。</code></p><p><code>计数单位是时钟周期。数值越小代表读写速度越快。</code></p><h3 id="tRCD-RAS-to-CAS-Delay"><a href="#tRCD-RAS-to-CAS-Delay" class="headerlink" title="tRCD(RAS to CAS Delay)"></a>tRCD(RAS to CAS Delay)</h3><p><code>RAS(ROW ADDRESS STROBE)指令至CAS(COLUMN ADDRESS STROBE)指令之间的延迟。</code> </p><p><code>从行地址选择到列地址选择的时间间隔。</code></p><h3 id="tRP-RAS-Precharge-Time"><a href="#tRP-RAS-Precharge-Time" class="headerlink" title="tRP(RAS Precharge Time)"></a>tRP(RAS Precharge Time)</h3><p><code>RAS指令至下一个RAS指令之间的延迟时间。</code></p><p><code>释放当前行并选择下一个行地址的时间。</code> </p><h3 id="tRAS-Row-Active-Time"><a href="#tRAS-Row-Active-Time" class="headerlink" title="tRAS(Row Active Time)"></a>tRAS(Row Active Time)</h3><p><code>行有效期,一个行被激活后的保持时间。</code></p><p><code>决定可以对同一行进行多次连续访问。</code></p><h2 id="超频与内存时序调整"><a href="#超频与内存时序调整" class="headerlink" title="超频与内存时序调整"></a>超频与内存时序调整</h2><p>内存模块工作频率由系统总线频率决定,随CPU主频的提高,系统总线频率也会增加:</p><ul><li><p>普通频率内,内存使用默认时序工作稳定。</p></li><li><p>但超频后,系统时钟频率升高,内存可能无法按时完成各操作。</p></li></ul><p>为兼容超频带来的系统时钟变化,我们需要调整内存时序:</p><ul><li><p>降低CL、tRCD、tRP等主要时序参数值,给内存留出更多周期操作。</p></li><li><p>例如,3000MHz内存的16-18-18,超频到4000MHz后调整为14-16-16。</p></li></ul><p>同时,需要适当提升DRAM工作电压VDD&#x2F;VDDQ,加速其响应:</p><ul><li><p>太低电压会因响应慢出现错误;过高电压同样不利。</p></li><li><p>时序调整与电压 设置是互相配合,才能让内存稳定工作在高频下。</p></li></ul><h2 id="其他细节需要注意"><a href="#其他细节需要注意" class="headerlink" title="其他细节需要注意"></a>其他细节需要注意</h2><ul><li><p>时序调太低存在安全隐患,务必检查稳定性。</p></li><li><p>某些芯片组对时序参数有限制,不要调出规格。 </p></li><li><p>更高时钟需要更高等级的内存方可运行无误。</p></li><li><p>调节前最好备份数据,避免因试错导致系统损坏。</p></li><li><p>内存热度也会影响频率极限,需要有效冷却管理。</p></li></ul><p>总之,内存超频需要掌握时序原理,并考虑各种影响因素,方能运行稳定。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 个人空间 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 计算机硬件 </tag>
+            
+            <tag> 内存 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>DOTA2历届TI冠军</title>
       <link href="/posts/3849495592.html"/>
       <url>/posts/3849495592.html</url>
