@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>JDK8-JDK21特性概览</title>
+      <link href="/posts/3748386589.html"/>
+      <url>/posts/3748386589.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="JDK-8-JDK-21-特性概览"><a href="#JDK-8-JDK-21-特性概览" class="headerlink" title="JDK 8 - JDK 21 特性概览"></a>JDK 8 - JDK 21 特性概览</h1><h2 id="JDK-8"><a href="#JDK-8" class="headerlink" title="JDK 8"></a>JDK 8</h2><ul><li>Lambda 表达式：引入了函数式编程的概念，简化了匿名内部类的使用。</li><li>Stream API：提供了对集合数据进行函数式操作的高级抽象。</li><li>默认方法（Default Methods）：接口中可以定义具体的方法实现。</li><li>方法引用（Method Reference）：简化了 Lambda 表达式的使用。</li><li>新的日期和时间 API：引入了 <code>java.time</code> 包，提供了更好的日期和时间处理方式。</li></ul><h2 id="JDK-9"><a href="#JDK-9" class="headerlink" title="JDK 9"></a>JDK 9</h2><ul><li>模块化系统（Module System）：引入了 Java 平台模块系统（Java Platform Module System，JPMS）。</li><li>JShell：交互式编程工具，允许在命令行中进行实时的 Java 代码编写和执行。</li><li>私有接口方法（Private Interface Methods）：接口中可以定义私有方法。</li><li>改进的 Stream API：引入了更多的操作和改进。</li></ul><h2 id="JDK-10"><a href="#JDK-10" class="headerlink" title="JDK 10"></a>JDK 10</h2><ul><li>局部变量类型推断（Local Variable Type Inference）：使用 <code>var</code> 关键字进行局部变量类型的推断。</li><li>应用类数据共享（Application Class-Data Sharing）：提供了一种在多个 Java 进程之间共享类元数据的机制。</li></ul><h2 id="JDK-11"><a href="#JDK-11" class="headerlink" title="JDK 11"></a>JDK 11</h2><ul><li>HTTP 客户端（HTTP Client）：提供了一个标准的 HTTP 客户端 API。</li><li>嵌套访问控制（Nest-Based Access Control）：引入了一种新的字节码验证方式，增强了类的访问控制。</li><li>启用单个文件执行（Launch Single-File Source-Code Programs）：允许直接执行单个 Java 源文件。</li></ul><h2 id="JDK-12"><a href="#JDK-12" class="headerlink" title="JDK 12"></a>JDK 12</h2><ul><li>Switch 表达式：增强了 Switch 语句的功能，可以作为表达式使用。</li><li>新的字符串方法：引入了一些方便的字符串处理方法。</li></ul><h2 id="JDK-13"><a href="#JDK-13" class="headerlink" title="JDK 13"></a>JDK 13</h2><ul><li>文本块（Text Blocks）：简化了多行字符串的书写。</li><li>动态 CDS 归档（Dynamic CDS Archives）：允许在运行时生成类数据共享（CDS）归档文件。</li></ul><h2 id="JDK-14"><a href="#JDK-14" class="headerlink" title="JDK 14"></a>JDK 14</h2><ul><li>Switch 表达式增强：进一步增强了 Switch 表达式的功能。</li><li>JFR（JDK Flight Recorder）：JDK 14 开始，JFR 成为 JDK 的一部分，可在所有的 JDK 发行版中使用。</li></ul><h2 id="JDK-15"><a href="#JDK-15" class="headerlink" title="JDK 15"></a>JDK 15</h2><ul><li>新的垃圾回收器：引入了 ZGC 垃圾回收器，具有低延迟和可扩展性的特点。</li><li>隐式的类型限定（Sealed Types）：引入了受限制的类和接口类型定义。</li></ul><h2 id="JDK-16"><a href="#JDK-16" class="headerlink" title="JDK 16"></a>JDK 16</h2><ul><li>增强的垃圾回收器接口：提供了更好的垃圾回收器管理功能。</li><li>强制异常处理（Pattern Matching for instanceof）：简化了 instanceof 操作符的使用。</li></ul><h2 id="JDK-17"><a href="#JDK-17" class="headerlink" title="JDK 17"></a>JDK 17</h2><ul><li>嵌套枚举（Nestmates）：改进了枚举类的访问权限。</li><li>基于JEP 356的弃用Applet API：弃用了 Applet API，不再建议使用。</li></ul><h2 id="JDK-18"><a href="#JDK-18" class="headerlink" title="JDK 18"></a>JDK 18</h2><ul><li>默认字符集为 UTF-8</li><li>Java 18 改进了 java.lang.reflect.Method、Constructor 的实现逻辑，使之性能更好，速度更快。这项改动不会改动相关 API ，这意味着开发中不需要改动反射相关代码，就可以体验到性能更好反射。</li></ul><h2 id="JDK-19"><a href="#JDK-19" class="headerlink" title="JDK 19"></a>JDK 19</h2><ul><li>虚拟线程（Virtual Thread-）（预览）</li><li>结构化并发(孵化) ，JDK 19 引入了结构化并发，一种多线程编程方法，目的是为了通过结构化并发 API 来简化多线程编程，并不是为了取代java.util.concurrent，目前处于孵化器阶段。</li></ul><h2 id="JDK-20"><a href="#JDK-20" class="headerlink" title="JDK 20"></a>JDK 20</h2><ul><li>作用域值（第一次孵化）作用域值（Scoped Values）它可以在线程内和线程间共享不可变的数据，优于线程局部变量，尤其是在使用大量虚拟线程时。</li></ul><h2 id="JDK-21"><a href="#JDK-21" class="headerlink" title="JDK 21"></a>JDK 21</h2><ul><li>虚拟线程是JDK 21中引入的一项重要特性。它是一种轻量级的线程实现，旨在提高Java应用程序的并发性能。</li><li>Z Garbage Collector（ZGC）在JDK 21中经历了性能优化。</li><li>JVM的内存模型和结构进行了改进，以提高垃圾回收的效率和性能。这对于大型Java应用程序的性能优化至关重要。</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>私有OSS仓库实现图片预览</title>
       <link href="/posts/1355304993.html"/>
       <url>/posts/1355304993.html</url>
